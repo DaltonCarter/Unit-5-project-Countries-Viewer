@@ -5,7 +5,6 @@ import { selectDisplay } from "../redux/slices/displayCountrySlice";
 import { toggleLoading, setLoadingFalse, setLoadingTrue } from "../redux/slices/LoadingSlice";
 import { selectLoading } from "../redux/slices/LoadingSlice";
 import LoadingScreen from "./LoadingScreen";
-require(`dotenv`).config()
 const {WEATHER_API_KEY} = process.env
 
 const Weather = () => {
@@ -22,7 +21,7 @@ const Weather = () => {
             url: 'https://weatherapi-com.p.rapidapi.com/current.json',
             params: {q: `${latitude}, ${longitude}`},
             headers: {
-              'X-RapidAPI-Key': `${WEATHER_API_KEY}`,
+              'X-RapidAPI-Key': `e599018296msh654dc785982d24ap1bd932jsnda2dcd3083e8`,
               'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
             }
           };
